@@ -31,9 +31,9 @@ namespace iStokTakip.FormApp.Modul_Stok
         void Listele()
         {
             var lst = from s in db.TBL_STOKLARs
-                      where s.STOKADI.Contains("txtStokAdi.Text") && 
-                      s.STOKBARKOD.Contains("txtBarkod.Text") && 
-                      s.STOKKODU.Contains("txtStokKodu.Text")
+                      where s.STOKADI.Contains(txtStokAdi.Text) && 
+                      s.STOKBARKOD.Contains(txtBarkod.Text) && 
+                      s.STOKKODU.Contains(txtStokKodu.Text)
                       select s; 
 
             gridListe.DataSource = lst;

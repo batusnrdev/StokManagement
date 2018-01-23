@@ -190,12 +190,16 @@
             this.ID.Caption = "ID";
             this.ID.FieldName = "ID";
             this.ID.Name = "ID";
+            this.ID.OptionsColumn.AllowEdit = false;
+            this.ID.OptionsColumn.AllowFocus = false;
             // 
             // STOKKODU
             // 
             this.STOKKODU.Caption = "STOK KODU";
             this.STOKKODU.FieldName = "STOKKODU";
             this.STOKKODU.Name = "STOKKODU";
+            this.STOKKODU.OptionsColumn.AllowEdit = false;
+            this.STOKKODU.OptionsColumn.AllowFocus = false;
             this.STOKKODU.Visible = true;
             this.STOKKODU.VisibleIndex = 0;
             this.STOKKODU.Width = 174;
@@ -205,6 +209,8 @@
             this.STOKADI.Caption = "STOK ADI";
             this.STOKADI.FieldName = "STOKADI";
             this.STOKADI.Name = "STOKADI";
+            this.STOKADI.OptionsColumn.AllowEdit = false;
+            this.STOKADI.OptionsColumn.AllowFocus = false;
             this.STOKADI.Visible = true;
             this.STOKADI.VisibleIndex = 1;
             this.STOKADI.Width = 428;

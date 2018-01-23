@@ -9,7 +9,7 @@ namespace iStokTakip.FormApp.Functions
 {
     public class Formlar
     {
-        public void StokListesi(bool Secim = false)
+        public int StokListesi(bool Secim = false)
         {
             frmStokListesi frm = new frmStokListesi();
             if (Secim)
@@ -22,12 +22,14 @@ namespace iStokTakip.FormApp.Functions
                 frm.MdiParent = AnaForm.ActiveForm;
                 frm.Show();
             }
+            return AnaForm.Aktarma;
         }
-        public void StokGruplari(bool Secim = false)
+        public int StokGruplari(bool Secim = false)
         {
             frmStokGruplari frm = new frmStokGruplari();
             if (Secim) frm.secim = Secim;
             frm.ShowDialog();
+            return AnaForm.Aktarma;
             
         }
         public void StokHareketleri(bool Ac = false)

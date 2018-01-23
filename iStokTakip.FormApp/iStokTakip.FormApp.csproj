@@ -68,6 +68,7 @@
     <Compile Include="Functions\Formlar.cs" />
     <Compile Include="Functions\Mesajlar.cs" />
     <Compile Include="Functions\Numara.cs" />
+    <Compile Include="Functions\Resim.cs" />
     <Compile Include="Modul_Stok\frmStokGruplari.cs">
       <SubType>Form</SubType>
     </Compile>
