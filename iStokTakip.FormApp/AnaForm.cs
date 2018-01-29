@@ -48,5 +48,25 @@ namespace iStokTakip.FormApp
         {
             formlar.StokHareketleri();
         }
+
+        private void barBtnCariKarti_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void barBtnCariGruplari_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void barBtnCariListesi_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void barBtnCariHareketleri_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
     }
 }

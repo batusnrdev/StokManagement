@@ -69,6 +69,30 @@
     <Compile Include="Functions\Mesajlar.cs" />
     <Compile Include="Functions\Numara.cs" />
     <Compile Include="Functions\Resim.cs" />
+    <Compile Include="Modul_Cari\frmCariAcilisKarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modul_Cari\frmCariAcilisKarti.Designer.cs">
+      <DependentUpon>frmCariAcilisKarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modul_Cari\frmCariGruplari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modul_Cari\frmCariGruplari.Designer.cs">
+      <DependentUpon>frmCariGruplari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modul_Cari\frmCariHareketleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modul_Cari\frmCariHareketleri.Designer.cs">
+      <DependentUpon>frmCariHareketleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modul_Cari\frmCariListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modul_Cari\frmCariListesi.Designer.cs">
+      <DependentUpon>frmCariListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modul_Stok\frmStokGruplari.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +121,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AnaForm.resx">
       <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modul_Cari\frmCariAcilisKarti.resx">
+      <DependentUpon>frmCariAcilisKarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modul_Cari\frmCariGruplari.resx">
+      <DependentUpon>frmCariGruplari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modul_Cari\frmCariHareketleri.resx">
+      <DependentUpon>frmCariHareketleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modul_Cari\frmCariListesi.resx">
+      <DependentUpon>frmCariListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modul_Stok\frmStokGruplari.resx">
       <DependentUpon>frmStokGruplari.cs</DependentUpon>

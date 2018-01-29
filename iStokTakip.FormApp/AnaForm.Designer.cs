@@ -29,21 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup5 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.repositoryItemTimeEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit();
+            this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barBtnStokKarti = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnStokListe = new DevExpress.XtraBars.BarButtonItem();
             this.barnBtnStokGrup = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnStokHareket = new DevExpress.XtraBars.BarButtonItem();
             this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
-            this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeEdit1)).BeginInit();
+            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.repositoryItemTimeEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit();
+            this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.barBtnCariKarti = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnCariGruplari = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnCariListesi = new DevExpress.XtraBars.BarButtonItem();
+            this.barBtnCariHareketleri = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonStatusBar
@@ -53,37 +59,35 @@
             this.ribbonStatusBar.Ribbon = this.ribbon;
             this.ribbonStatusBar.Size = new System.Drawing.Size(743, 31);
             // 
-            // xtraTabbedMdiManager1
+            // ribbon
             // 
-            this.xtraTabbedMdiManager1.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPageHeaders;
-            this.xtraTabbedMdiManager1.MdiParent = this;
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Stok";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barBtnStokKarti);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barBtnStokListe);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barnBtnStokGrup);
-            this.ribbonPageGroup1.ItemLinks.Add(this.barBtnStokHareket);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Stok İşlemleri";
-            // 
-            // repositoryItemTimeEdit1
-            // 
-            this.repositoryItemTimeEdit1.AutoHeight = false;
-            this.repositoryItemTimeEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.repositoryItemTimeEdit1.Name = "repositoryItemTimeEdit1";
+            this.ribbon.ExpandCollapseItem.Id = 0;
+            this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbon.ExpandCollapseItem,
+            this.barBtnStokKarti,
+            this.barBtnStokListe,
+            this.barnBtnStokGrup,
+            this.barBtnStokHareket,
+            this.skinRibbonGalleryBarItem1,
+            this.barBtnCariKarti,
+            this.barBtnCariGruplari,
+            this.barBtnCariListesi,
+            this.barBtnCariHareketleri});
+            this.ribbon.Location = new System.Drawing.Point(0, 0);
+            this.ribbon.MaxItemId = 13;
+            this.ribbon.Name = "ribbon";
+            this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
+            this.ribbonPage1,
+            this.ribbonPage2});
+            this.ribbon.QuickToolbarItemLinks.Add(this.skinRibbonGalleryBarItem1);
+            this.ribbon.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemTimeEdit1});
+            this.ribbon.Size = new System.Drawing.Size(743, 162);
+            this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // barBtnStokKarti
             // 
-            this.barBtnStokKarti.Caption = "Stok Kartı";
+            this.barBtnStokKarti.Caption = "Stok Açılış Kartı";
             this.barBtnStokKarti.Id = 1;
             this.barBtnStokKarti.ImageOptions.LargeImage = global::iStokTakip.FormApp.Properties.Resources.Stok_Kartı32x32;
             this.barBtnStokKarti.Name = "barBtnStokKarti";
@@ -119,32 +123,90 @@
             // 
             // 
             // 
-            galleryItemGroup1.Caption = "Group1";
+            galleryItemGroup5.Caption = "Group1";
             this.skinRibbonGalleryBarItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
-            galleryItemGroup1});
+            galleryItemGroup5});
             this.skinRibbonGalleryBarItem1.Id = 5;
             this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
             // 
-            // ribbon
+            // ribbonPage1
             // 
-            this.ribbon.ExpandCollapseItem.Id = 0;
-            this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbon.ExpandCollapseItem,
-            this.barBtnStokKarti,
-            this.barBtnStokListe,
-            this.barnBtnStokGrup,
-            this.barBtnStokHareket,
-            this.skinRibbonGalleryBarItem1});
-            this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 9;
-            this.ribbon.Name = "ribbon";
-            this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1});
-            this.ribbon.QuickToolbarItemLinks.Add(this.skinRibbonGalleryBarItem1);
-            this.ribbon.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemTimeEdit1});
-            this.ribbon.Size = new System.Drawing.Size(743, 143);
-            this.ribbon.StatusBar = this.ribbonStatusBar;
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1});
+            this.ribbonPage1.Image = global::iStokTakip.FormApp.Properties.Resources.Stok32x32;
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "Stok";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barBtnStokKarti);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barBtnStokListe);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barnBtnStokGrup);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barBtnStokHareket);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Stok İşlemleri";
+            // 
+            // repositoryItemTimeEdit1
+            // 
+            this.repositoryItemTimeEdit1.AutoHeight = false;
+            this.repositoryItemTimeEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemTimeEdit1.Name = "repositoryItemTimeEdit1";
+            // 
+            // xtraTabbedMdiManager1
+            // 
+            this.xtraTabbedMdiManager1.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPageHeaders;
+            this.xtraTabbedMdiManager1.MdiParent = this;
+            // 
+            // ribbonPage2
+            // 
+            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup2});
+            this.ribbonPage2.Image = global::iStokTakip.FormApp.Properties.Resources.Cari_Kart32x32;
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = "Cari";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.barBtnCariKarti);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barBtnCariGruplari);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barBtnCariListesi);
+            this.ribbonPageGroup2.ItemLinks.Add(this.barBtnCariHareketleri);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            this.ribbonPageGroup2.Text = "Cari İşlemleri";
+            // 
+            // barBtnCariKarti
+            // 
+            this.barBtnCariKarti.Caption = "Cari Açılış Kartı";
+            this.barBtnCariKarti.Id = 9;
+            this.barBtnCariKarti.ImageOptions.Image = global::iStokTakip.FormApp.Properties.Resources.Cari_Kart32x32;
+            this.barBtnCariKarti.ImageOptions.LargeImage = global::iStokTakip.FormApp.Properties.Resources.Cari_Kart32x32;
+            this.barBtnCariKarti.Name = "barBtnCariKarti";
+            this.barBtnCariKarti.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnCariKarti_ItemClick);
+            // 
+            // barBtnCariGruplari
+            // 
+            this.barBtnCariGruplari.Caption = "Cari Grupları";
+            this.barBtnCariGruplari.Id = 10;
+            this.barBtnCariGruplari.ImageOptions.LargeImage = global::iStokTakip.FormApp.Properties.Resources.Cari_Grup32x32;
+            this.barBtnCariGruplari.Name = "barBtnCariGruplari";
+            this.barBtnCariGruplari.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnCariGruplari_ItemClick);
+            // 
+            // barBtnCariListesi
+            // 
+            this.barBtnCariListesi.Caption = "Cari Listesi";
+            this.barBtnCariListesi.Id = 11;
+            this.barBtnCariListesi.ImageOptions.LargeImage = global::iStokTakip.FormApp.Properties.Resources.Cari_Liste32x32;
+            this.barBtnCariListesi.Name = "barBtnCariListesi";
+            this.barBtnCariListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnCariListesi_ItemClick);
+            // 
+            // barBtnCariHareketleri
+            // 
+            this.barBtnCariHareketleri.Caption = "Cari Hareketleri";
+            this.barBtnCariHareketleri.Id = 12;
+            this.barBtnCariHareketleri.ImageOptions.LargeImage = global::iStokTakip.FormApp.Properties.Resources.Cari_Hareket32x32;
+            this.barBtnCariHareketleri.Name = "barBtnCariHareketleri";
+            this.barBtnCariHareketleri.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnCariHareketleri_ItemClick);
             // 
             // AnaForm
             // 
@@ -161,9 +223,9 @@
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "Stok Takip v1.0";
             this.Load += new System.EventHandler(this.AnaForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTimeEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,5 +243,11 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit repositoryItemTimeEdit1;
+        private DevExpress.XtraBars.BarButtonItem barBtnCariKarti;
+        private DevExpress.XtraBars.BarButtonItem barBtnCariGruplari;
+        private DevExpress.XtraBars.BarButtonItem barBtnCariListesi;
+        private DevExpress.XtraBars.BarButtonItem barBtnCariHareketleri;
+        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
     }
 }
