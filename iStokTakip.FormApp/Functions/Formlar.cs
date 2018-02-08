@@ -1,4 +1,5 @@
 ﻿using iStokTakip.FormApp.Modul_Stok;
+using iStokTakip.FormApp.Modul_Cari;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace iStokTakip.FormApp.Functions
 {
     public class Formlar
     {
+        #region StokFormları
         public int StokListesi(bool Secim = false)
         {
             frmStokListesi frm = new frmStokListesi();
@@ -30,17 +32,25 @@ namespace iStokTakip.FormApp.Functions
             if (Secim) frm.secim = Secim;
             frm.ShowDialog();
             return AnaForm.Aktarma;
-            
+
         }
         public void StokHareketleri(bool Ac = false)
         {
 
         }
-        public void StokKarti(bool Ac=false)
+        public void StokKarti(bool Ac = false)
         {
             frmStokKarti frm = new frmStokKarti();
             frm.ShowDialog();
-        }
+        } 
+        #endregion
 
+        public int CariGruplari(bool Secim = false)
+        {
+            frmCariGruplari frm = new frmCariGruplari();
+            if (Secim) frm.secim = Secim;
+            frm.ShowDialog();
+            return AnaForm.Aktarma;
+        }
     }
 }

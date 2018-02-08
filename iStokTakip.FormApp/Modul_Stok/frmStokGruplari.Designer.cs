@@ -64,6 +64,7 @@
             this.groupControl3.Name = "groupControl3";
             this.groupControl3.Size = new System.Drawing.Size(280, 241);
             this.groupControl3.TabIndex = 1;
+            this.groupControl3.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl3_Paint);
             // 
             // gridStokGrup
             // 
@@ -75,6 +76,7 @@
             this.gridStokGrup.TabIndex = 0;
             this.gridStokGrup.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridStokGrup.Click += new System.EventHandler(this.gridStokGrup_Click);
             // 
             // gridView1
             // 
@@ -129,6 +131,7 @@
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(280, 81);
             this.groupControl2.TabIndex = 2;
+            this.groupControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl2_Paint);
             // 
             // btnKapat
             // 
@@ -176,6 +179,7 @@
             this.groupControl1.Size = new System.Drawing.Size(280, 119);
             this.groupControl1.TabIndex = 3;
             this.groupControl1.Text = "Grup Bilgisi";
+            this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
             // 
             // labelControl2
             // 
@@ -184,6 +188,7 @@
             this.labelControl2.Size = new System.Drawing.Size(41, 13);
             this.labelControl2.TabIndex = 4;
             this.labelControl2.Text = "Grup Adı";
+            this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
             // 
             // txtGrupAdi
             // 
@@ -191,6 +196,7 @@
             this.txtGrupAdi.Name = "txtGrupAdi";
             this.txtGrupAdi.Size = new System.Drawing.Size(206, 20);
             this.txtGrupAdi.TabIndex = 2;
+            this.txtGrupAdi.EditValueChanged += new System.EventHandler(this.txtGrupAdi_EditValueChanged);
             // 
             // labelControl1
             // 
@@ -199,6 +205,7 @@
             this.labelControl1.Size = new System.Drawing.Size(50, 13);
             this.labelControl1.TabIndex = 5;
             this.labelControl1.Text = "Grup Kodu";
+            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // txtGrupKodu
             // 
@@ -206,6 +213,7 @@
             this.txtGrupKodu.Name = "txtGrupKodu";
             this.txtGrupKodu.Size = new System.Drawing.Size(206, 20);
             this.txtGrupKodu.TabIndex = 3;
+            this.txtGrupKodu.EditValueChanged += new System.EventHandler(this.txtGrupKodu_EditValueChanged);
             // 
             // frmStokGruplari
             // 

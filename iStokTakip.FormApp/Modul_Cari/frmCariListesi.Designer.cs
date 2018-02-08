@@ -235,6 +235,7 @@
             this.MinimizeBox = false;
             this.Name = "frmCariListesi";
             this.Text = "Cari Listesi";
+            this.Load += new System.EventHandler(this.frmCariListesi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();

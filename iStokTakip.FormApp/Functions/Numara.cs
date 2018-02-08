@@ -26,5 +26,22 @@ namespace iStokTakip.FormApp.Functions
                 return "0000001";
             }
         }
+
+        public string CariKodNumarasi()
+        {
+            try
+            {
+                int kod = int.Parse((from s in db.TBL_CARILERs orderby 
+                                     s.ID descending select s).First().CARIKODU);
+                kod++;
+                string num = kod.ToString().PadLeft(7, '0');
+                return num;
+            }
+            catch (Exception)
+            {
+
+                return "0000001";
+            }
+        }
     }
 }

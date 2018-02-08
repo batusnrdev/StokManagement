@@ -51,12 +51,12 @@ namespace iStokTakip.FormApp
 
         private void barBtnCariKarti_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            
         }
 
         private void barBtnCariGruplari_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            formlar.CariGruplari();
         }
 
         private void barBtnCariListesi_ItemClick(object sender, ItemClickEventArgs e)

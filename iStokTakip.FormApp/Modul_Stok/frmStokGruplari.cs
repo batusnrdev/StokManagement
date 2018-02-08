@@ -153,5 +153,45 @@ namespace iStokTakip.FormApp.Modul_Stok
                 this.Close();
             }
         }
+
+        private void gridStokGrup_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupControl2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void groupControl3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void groupControl1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void labelControl2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGrupAdi_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGrupKodu_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

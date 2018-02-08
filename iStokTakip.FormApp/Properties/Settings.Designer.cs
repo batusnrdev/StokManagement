@@ -33,5 +33,27 @@ namespace iStokTakip.FormApp.Properties {
                 return ((string)(this["StokTakipConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-4P1D4CG;Initial Catalog=StokTakip;Persist Security Info=True;" +
+            "User ID=sa;Password=3012")]
+        public string StokTakipConnectionString1 {
+            get {
+                return ((string)(this["StokTakipConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=StokTakip;Persist Security Info=True;User ID=sa;Pas" +
+            "sword=3012")]
+        public string StokTakipConnectionString2 {
+            get {
+                return ((string)(this["StokTakipConnectionString2"]));
+            }
+        }
     }
 }

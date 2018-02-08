@@ -2,16 +2,28 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Database">
   <DataContextMoniker Name="/DatabaseDataContext" />
   <nestedChildShapes>
-    <classShape Id="a2f492f5-8a0b-4695-83d7-753ce66036c2" absoluteBounds="0.5, 0.5, 2, 2.1554996744791666">
+    <classShape Id="e1814bd2-0663-42cf-8cc0-6c38dede1dba" absoluteBounds="0.5, 1.125, 2, 2.1554996744791666">
       <DataClassMoniker Name="/DatabaseDataContext/TBL_STOKGRUPLARI" />
       <nestedChildShapes>
-        <elementListCompartment Id="5979f97a-23ac-48fd-a627-b2b1b2fc1061" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="e94e3b71-de01-4789-8ef2-3055538e9d2b" absoluteBounds="0.51499999999999968, 1.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="8eafa5e0-fa8c-4b82-971c-762d791a91f3" absoluteBounds="2.875, 0.5, 2, 3.6939111328124996">
+    <classShape Id="5fc1ea7f-88d8-4bcf-8b74-eb924958109d" absoluteBounds="5, 0.5, 2, 3.6939111328124996">
       <DataClassMoniker Name="/DatabaseDataContext/TBL_STOKLAR" />
       <nestedChildShapes>
-        <elementListCompartment Id="86e3f26a-ee9d-4b23-8e36-b53a99f4f6b1" absoluteBounds="2.8899999999999997, 0.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="d351bcfa-92c4-477f-aa49-d6c8c1813756" absoluteBounds="5.015, 0.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18ead39a-d365-4880-af45-ac015a4def40" absoluteBounds="0.5, 3.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DatabaseDataContext/TBL_CARIGRUPLARI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="17a6bdc1-6b5c-453a-9c90-1dbce20413c1" absoluteBounds="0.51500000000000012, 4.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d686bd5d-966b-46b5-bc6b-b388509e7e62" absoluteBounds="2.75, 0.5, 2, 5.4246240234375">
+      <DataClassMoniker Name="/DatabaseDataContext/TBL_CARILER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e7316057-6af4-4f91-8387-3e3b67207277" absoluteBounds="2.7649999999999997, 0.96, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>
